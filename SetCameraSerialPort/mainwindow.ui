@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>211</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Connection</string>
+    </property>
+    <widget class="QTextEdit" name="TerminalConnect">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>191</width>
+       <height>87</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ComPorts">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Refresh">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>58</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Connect">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>551</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Transmission and Monitoring</string>
+    </property>
+    <widget class="QTextEdit" name="consol">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>60</y>
+       <width>261</width>
+       <height>131</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SendData">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>19</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Send</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EnterText">
+     <property name="geometry">
+      <rect>
+       <x>111</x>
+       <y>20</y>
+       <width>430</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="hexconsol">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>261</width>
+       <height>131</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="ControlPanel">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>771</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>zoom</string>
+     </property>
+     <widget class="QPushButton" name="zoomplus">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>20</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoomminus">
+      <property name="geometry">
+       <rect>
+        <x>99</x>
+        <y>20</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="zoom">
+      <property name="geometry">
+       <rect>
+        <x>59</x>
+        <y>21</y>
+        <width>31</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>bright</string>
+     </property>
+     <widget class="QLineEdit" name="bright">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setbright">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>palette</string>
+     </property>
+     <widget class="QLineEdit" name="palette">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setpalette">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>151</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>bc mode</string>
+     </property>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>110</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mean</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>110</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Median</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>110</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Linear</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>110</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Advanced</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>30</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>contrast</string>
+     </property>
+     <widget class="QLineEdit" name="contrast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setcontrast">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>90</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>contrast bias</string>
+     </property>
+     <widget class="QLineEdit" name="contrast_bias">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setcontrast_bias">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>30</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>gamma</string>
+     </property>
+     <widget class="QPushButton" name="setgamma">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="gamma">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_11">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>150</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>extra contrast </string>
+     </property>
+     <widget class="QPushButton" name="setextracontrast">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="extra_contrast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>90</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>sharpen</string>
+     </property>
+     <widget class="QPushButton" name="setsharpen">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sharpen">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_12">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>150</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>destripe</string>
+     </property>
+     <widget class="QPushButton" name="setdestripe">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>19</y>
+        <width>61</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>set</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="destripe">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>61</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_13">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>30</y>
+       <width>111</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>focus</string>
+     </property>
+     <widget class="QPushButton" name="focusnear">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>75</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>near</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="focusfar">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>75</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>far</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="focustop">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>75</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="InfoCam">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>771</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="restart">
+    <property name="geometry">
+     <rect>
+      <x>707</x>
+      <y>490</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Restart</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="readconfig">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>490</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ReadConfig</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
