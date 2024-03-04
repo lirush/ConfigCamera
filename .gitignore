@@ -1,0 +1,3 @@
+# Игнорировать файлы user
+/SetCameraSerialPort/*.pro.user
+/SetCameraSerialPort/*.pro.user.*
